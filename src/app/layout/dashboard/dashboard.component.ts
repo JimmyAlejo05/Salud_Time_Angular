@@ -15,37 +15,31 @@ export class DashboardComponent implements OnInit {
         this.sliders.push(
             {
                 imagePath: 'assets/images/slider1.jpg',
-                label: 'First slide label',
-                text: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+                label: 'RECUERDA',
+                text: 'Cuídate y protégete ¡Usa Tapabocas! Port tí y por todos los que quieres'
             },
             {
                 imagePath: 'assets/images/slider2.jpg',
-                label: 'Second slide label',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                label: 'GRACIAS',
+                text: 'Los médicos, enférmeros, auxiliar, farmacéutico, celadiores, cuidadores'
             },
             {
                 imagePath: 'assets/images/slider3.jpg',
-                label: 'Third slide label',
-                text: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+                label: 'James Dean',
+                text: '“No puedo cambiar la dirección del viento, pero sí ajustar mis velas para llegar siempre a mi destino.”'
             }
         );
 
         this.alerts.push(
             {
                 id: 1,
-                type: 'success',
-                message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates est animi quibusdam praesentium quam, et perspiciatis,
-                consectetur velit culpa molestias dignissimos
-                voluptatum veritatis quod aliquam! Rerum placeat necessitatibus, vitae dolorum`
+                type: 'Mensaje',
+                message: ``
             },
             {
                 id: 2,
-                type: 'warning',
-                message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates est animi quibusdam praesentium quam, et perspiciatis,
-                consectetur velit culpa molestias dignissimos
-                voluptatum veritatis quod aliquam! Rerum placeat necessitatibus, vitae dolorum`
+                type: 'Recordatorio',
+                message: ``
             }
         );
     }
