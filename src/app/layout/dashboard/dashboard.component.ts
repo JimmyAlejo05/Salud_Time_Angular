@@ -33,8 +33,8 @@ export class DashboardComponent implements OnInit {
         this.alerts.push(
             {
                 id: 1,
-                type: 'Mensaje',
-                message: ``
+                type: 'Documentacion ',
+                message: `mire la docuemtacion links`
             },
             {
                 id: 2,
