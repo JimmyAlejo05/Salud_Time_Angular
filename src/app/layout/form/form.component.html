@@ -1,222 +1,184 @@
 <div [@routerTransition]>
-    <app-page-header [heading]="'Forms'" [icon]="'fa-edit'"></app-page-header>
+    <app-page-header [heading]="'Triage'" [icon]="'fa-edit'"></app-page-header>
 
     <div class="row">
+        <!--PRIMERA PREGUNA-->
         <div class="col-lg-6">
             <form role="form">
                 <fieldset class="form-group">
-                    <label>Text Input</label>
-                    <input class="form-control" />
-                    <p class="help-block">Example block-level help text here.</p>
-                </fieldset>
-
-                <fieldset class="form-group">
-                    <label>Text Input with Placeholder</label>
-                    <input class="form-control" placeholder="Enter text" />
-                </fieldset>
-
-                <div class="form-group">
-                    <label>Static Control</label>
-                    <p class="form-control-static">email@example.com</p>
-                </div>
-
-                <fieldset class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input class="form-control-file" id="exampleInputFile" type="file" />
-                </fieldset>
-
-                <fieldset class="form-group">
-                    <label>Text area</label>
-                    <textarea class="form-control" rows="3"></textarea>
-                </fieldset>
-
-                <div class="form-group">
-                    <label>Checkboxes</label>
-                    <div class="checkbox">
-                        <label> <input type="checkbox" value="" /> Checkbox 1 </label>
-                    </div>
-                    <div class="checkbox">
-                        <label> <input type="checkbox" value="" /> Checkbox 2 </label>
-                    </div>
-                    <div class="checkbox">
-                        <label> <input type="checkbox" value="" /> Checkbox 3 </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Inline Checkboxes</label>
-                    <label class="checkbox-inline"> <input type="checkbox" />1 </label>
-                    <label class="checkbox-inline"> <input type="checkbox" />2 </label>
-                    <label class="checkbox-inline"> <input type="checkbox" />3 </label>
-                </div>
-
-                <fieldset class="form-group">
-                    <label>Radio Buttons</label>
+                    <label>El niño tiene Dificultad para respirar?</label>
                     <div class="radio">
-                        <label>
-                            <input checked="" id="optionsRadios1" name="optionsRadios" type="radio" value="option1" />
-                            Radio 1
-                        </label>
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI1" />SI </label>
                     </div>
                     <div class="radio">
-                        <label>
-                            <input id="optionsRadios2" name="optionsRadios" type="radio" value="option2" /> Radio 2
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input id="optionsRadios3" name="optionsRadios" type="radio" value="option3" /> Radio 3
-                        </label>
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO1" /> NO</label>
                     </div>
                 </fieldset>
-
-                <fieldset class="form-group">
-                    <label>Inline Radio Buttons</label>
-                    <label class="radio-inline">
-                        <input
-                            checked=""
-                            id="optionsRadiosInline1"
-                            name="optionsRadiosInline"
-                            type="radio"
-                            value="option1"
-                        />1
-                    </label>
-                    <label class="radio-inline">
-                        <input id="optionsRadiosInline2" name="optionsRadiosInline" type="radio" value="option2" />2
-                    </label>
-                    <label class="radio-inline">
-                        <input id="optionsRadiosInline3" name="optionsRadiosInline" type="radio" value="option3" />3
-                    </label>
-                </fieldset>
-
-                <div class="form-group">
-                    <label>Selects</label>
-                    <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-
-                <fieldset class="form-group">
-                    <label>Multiple Selects</label>
-                    <select class="form-control" multiple="">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </fieldset>
-
-                <button class="btn btn-secondary" type="submit">Submit Button</button>
-                <button class="btn btn-secondary" type="reset">Reset Button</button>
             </form>
         </div>
+        <!-- SEGUNDA PREGUNA-->
         <div class="col-lg-6">
-            <h4>Disabled Form States</h4>
-
             <form role="form">
-                <fieldset disabled="">
-                    <div class="form-group">
-                        <label for="disabledSelect">Disabled input</label>
-                        <input
-                            class="form-control"
-                            disabled=""
-                            id="disabledInput"
-                            placeholder="Disabled input"
-                            type="text"
-                        />
+                <fieldset class="form-group2">
+                    <label>El niño respira más rapido que lo habitual?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI2" />SI</label>
                     </div>
-
-                    <div class="form-group">
-                        <label for="disabledSelect">Disabled select menu</label>
-                        <select class="form-control" id="disabledSelect">
-                            <option>Disabled select</option>
-                        </select>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO2" />NO</label>
                     </div>
-
-                    <div class="checkbox">
-                        <label> <input type="checkbox" /> Disabled Checkbox </label>
-                    </div>
-
-                    <button class="btn btn-primary" type="submit">Disabled Button</button>
                 </fieldset>
             </form>
-            <br />
-
-            <h4>Form Validation</h4>
-
-            <form role="form">
-                <div class="form-group">
-                    <label class="form-control-label" for="inputSuccess">Input with success</label>
-                    <input class="form-control is-valid" id="inputSuccess" type="text" />
-                    <div class="valid-feedback">
-                        Input success message
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-control-label" for="inputError">Input with danger</label>
-                    <input class="form-control is-invalid" id="inputError" type="text" />
-                    <div class="invalid-feedback">
-                        Input error message
-                    </div>
-                </div>
-            </form>
-
-            <h4>Input Groups</h4>
-
-            <form role="form">
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <!-- <span class="input-group-addon">@</span> -->
-                    <input class="form-control" placeholder="Username" type="text" />
-                </div>
-
-                <div class="form-group input-group">
-                    <input class="form-control" type="text" />
-                    <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                </div>
-
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-eur"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Font Awesome Icon" type="text" />
-                </div>
-
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">$</span>
-                    </div>
-                    <input class="form-control" type="text" />
-                    <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                </div>
-
-                <div class="form-group input-group">
-                    <input class="form-control" type="text" />
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-
-            <p>
-                For complete documentation, please visit
-                <a href="https://getbootstrap.com/docs/4.0/components/forms/" target="_blank"
-                    >Bootstrap's Form Documentation</a
-                >.
-            </p>
         </div>
+        <!--TRECERA PREGUNDA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>Al niño se le hunden las costillas?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadiosS3" name="optionsRadios" type="radio" value="SI3" />SI</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO3" />NO</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--4TA PREGUNDA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>El niño ha tenido fiebre?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI4" />Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO4" />No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--5TA PREGUNDA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>El niño esta comiendo normal?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI5" />Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO5" />No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--6TO PREGUNDA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>El niño ha vomita lo que come?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI6" />Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO6" />No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- 7MA PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>El niño Tiene sueño todo el dia?</label>
+                    <div class="radio">
+                         <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI7" />Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO7" />No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--8VA PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>Al niño lo ve deshidratado?</label>
+                        <div class="radio">
+                            <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI8" />Si</label>
+                        </div>
+                        <div class="radio">
+                            <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO8" />No</label>
+                        </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--9NA PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                <label>El niño ha tenido diarrea?</label>
+                    <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI9" />Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO9" />No</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--10MA PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                <label>El niño ha estado irritable?</label>
+                <div class="radio">
+                    <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI10" />Si</label>
+                </div>
+                <div class="radio">
+                    <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO10" />No</label>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- 11VA PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                <label>El niño duerme bien?</label>
+                <div class="radio">
+                    <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI11" />Si</label></div>
+                <div class="radio">
+                    <label><input id="optionsRadios" name="optionsRadios" type="radio" value="NO11" />No</label>
+                 </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--12AV PREGUNTA-->
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                <label>El niño tiene dolor abdominal?</label>
+                <div class="radio">
+                        <label><input checked="" id="optionsRadios" name="optionsRadios" type="radio" value="SI12" />Si</label>
+                </div>
+                <div class="radio">
+                <label>
+                    <input id="optionsRadios" name="optionsRadios" type="radio" value="NO12" />No
+                </label>
+                </div>
+                <input type="submit" value="Enviar este formulario" />
+                </fieldset>
+            </form>
+             
+                <p> Formulario realizado por:</p>
+                    Angela Maria Alfonso Daza 
+                    Medico general de la  Universidad de Boyaca.
+                    8 años de experiencia en servicio de  urgencias de primer y segundo nivel Y 2 años de experiencia en servicio maternoperinatal.
+                    Trabaja actualmente en el hospital de aguazul y yopal.
+        </div>
+      
     </div>
     <!-- /.row -->
 </div>
