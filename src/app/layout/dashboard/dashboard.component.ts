@@ -35,11 +35,6 @@ export class DashboardComponent implements OnInit {
                 id: 1,
                 type: 'Documentacion ',
                 message: `mire la docuemtacion links`
-            },
-            {
-                id: 2,
-                type: 'Recordatorio',
-                message: ``
             }
         );
     }
