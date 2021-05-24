@@ -28,16 +28,16 @@ export class ChartsComponent implements OnInit {
     public doughnutChartType: string;
 
     // Radar
-    /*public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+    public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
     public radarChartData: any = [
         { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
         { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
     ];
-    public radarChartType: string;*/
+    public radarChartType: string;
 
     // Pie
-    public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-    public pieChartData: number[] = [300, 500, 100];
+    public pieChartLabels: string[] = ['Citas Confirmadas', 'Citas Re agendadas', 'Citas Caneladas'];
+    public pieChartData: number[] = [30, 15, 18];
     public pieChartType: string;
 
     // PolarArea
@@ -55,11 +55,11 @@ export class ChartsComponent implements OnInit {
 
     // lineChart
     public lineChartData: Array<any> = [
-        { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-        { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
-        { data: [18, 48, 77, 9, 100, 27, 40], label: 'Series C' }
+        { data: [65, 59, 80, 81, 56, 55, 40], label: 'paciente A' },
+        { data: [28, 48, 40, 19, 86, 27, 90], label: 'paciente B' },
+       // { data: [18, 48, 77, 9, 100, 27, 40], label: 'Series C' }
     ];
-    public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    public lineChartLabels: Array<any> = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
     public lineChartOptions: any = {
         responsive: true
     };
@@ -124,7 +124,7 @@ export class ChartsComponent implements OnInit {
         this.barChartType = 'bar';
         this.barChartLegend = true;
         this.doughnutChartType = 'doughnut';
-        //this.radarChartType = 'radar';
+        this.radarChartType = 'radar';
         this.pieChartType = 'pie';
         this.polarAreaLegend = true;
         this.polarAreaChartType = 'polarArea';

@@ -7,12 +7,11 @@
                   Pacientes
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="./charts.component.html">Action</a>
-                  <a class="dropdown-item" href="./charts.component.html">Another action</a>
-                  <a class="dropdown-item" href="./charts.component.html">Something else here</a>
+                  <a class="dropdown-item" href="./charts.component.html">Hijo 1</a>
+                  <a class="dropdown-item" href="./charts.component.html">Hijo 2</a>
                 </div>
             </div>
-            <div class="card mb-3"id="consultas">
+            <div class="card mb-3">
                 <div class="card-header">
                 Total De Consultas
                 </div>
@@ -35,9 +34,9 @@
             </div>
         </div>
         <div class="col col-sm-6">
-            <div class="card mb-3" id="linea">
+            <div class="card mb-3">
                 <div class="card-header">
-                    Line Chart
+                    linea de progreso de los paciente
                 </div>
                 <div class="card-body">
                     <canvas
@@ -50,7 +49,7 @@
                         [legend]="lineChartLegend"
                         [options]="lineChartOptions"
                         baseChart
-                        height="130"
+                        height="180"
                     >
                     </canvas>
                 </div>
@@ -80,7 +79,7 @@
         <div class="col col-sm-6">
             <div class="card mb-3">
                 <div class="card-header">
-                    Pie Chart
+                    porcentajes de citas de control 
                 </div>
                 <div class="card-body">
                     <canvas
@@ -90,7 +89,7 @@
                         [data]="pieChartData"
                         [labels]="pieChartLabels"
                         baseChart
-                        height="150px"
+                        height="180px"
                     >
                     </canvas>
                 </div>
